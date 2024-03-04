@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroPage.IntroStep1">
+    <RelativeLayout
+        android:id="@+id/header_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="40dp"
+            android:tint="@color/black"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_height="40dp">
+        </ImageView>
+        <LinearLayout
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/back_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_marginRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:background="@color/grey">
+            </View>
+            <View  android:layout_marginRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:background="@color/purple_200">
+            </View>
+
+            <View  android:layout_marginRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:background="@color/grey">
+            </View>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:background="@color/grey">
+            </View>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:background="@color/grey">
+            </View>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/header_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/circle"
+                    android:src="@drawable/logo"
+                    android:tint="@color/white"
+                    android:layout_width="25dp"
+                    android:padding="3dp"
+                    android:layout_height="25dp"></ImageView>
+                <TextView android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="We're Excited to help you!"
+                    android:textSize="13dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <TextView
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What sex should we\nuse to calculate your\nrecommendation?"
+                android:textSize="22dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:orientation="vertical"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardElevation="5dp"
+                    card_view:contentPadding="10dp">
+
+                    <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+                        <ImageView android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/img"
+                            android:src="@drawable/woman"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:id="@+id/txt"
+                            android:textSize="18sp"
+                            android:text="Female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@+id/img"
+                            android:layout_marginStart="20dp"/>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:orientation="vertical"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardElevation="5dp"
+                    card_view:contentPadding="10dp">
+
+                    <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+                        <ImageView android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/img1" android:src="@drawable/man"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/app_name"/>
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:textSize="18sp"
+                            android:text="Male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@+id/img1"
+                            android:layout_marginStart="20dp"/>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <TextView android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="We Use The Information to Calculate and provide you with daily personalized recommendations!"
+                android:textSize="14dp"
+                android:padding="10dp"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/black"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@color/orange"
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/orange"
+                android:layout_height="45dp"
+                android:text="NEXT"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textAllCaps="true"
+                android:layout_marginRight="26dp"
+                android:layout_marginLeft="26dp"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
